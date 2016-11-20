@@ -1,0 +1,99 @@
+@charset "UTF-8";
+/*CSS Document*/
+
+* { margin:0; 
+	padding:0; 
+}/*defined globally so no extra space*/
+
+body
+{	font-family: Impact, "Trebuchet MS", sans-serif;
+}
+
+#wrapper
+{
+	width: 100vw;
+	height: 100vh;
+	background-image: url(images/IMG_0014.JPG);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+	-ms-background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-size: cover;
+    z-index: 0;
+}
+
+#screen
+{
+	margin: 0;
+	padding: 0;
+	width: 100vw;
+	height: 100vh;
+	z-index: 1;
+	background-color: black;
+	opacity: 0.6;
+	position: absolute;
+}
+
+#centerText
+{
+	margin-top: 35vh;
+	margin-left: 20vw;
+	width: 50vw;
+	position: absolute;
+	z-index: 2;
+	text-align: left;
+	color: white;
+	font-size: 3.5em;
+}
+
+#skip
+{
+	position: relative;
+	z-index: 2;
+	color: white;
+	font-size: 2em;
+	float: right;
+	text-align: center;
+	padding-right: 40px;
+	padding-top: 30px;
+	visibility: hidden;
+}
+
+#skip a
+{
+	text-decoration: none;
+	color: #C9C9C9;
+}
+
+#coin
+{
+	position: absolute;
+	background-image: url(images/coin2.gif);
+	z-index: 10;
+	float: left;
+	background-size: 30px;
+	width: 30px;
+	height: 30px;
+	visibility: hidden;
+}
+
+#score
+{
+	font-size: 2.3em;
+	color:#C9C9C9;
+	float: left;
+	z-index: 3;
+	position: absolute;
+	visibility: hidden;
+	left: 40px;
+	top: 30px;
+}
+
+#score img
+{
+	width: 40px;
+	height: 40px;
+}

@@ -1,0 +1,77 @@
+<html>
+<head>
+    <title>Tooltip Example: Show Hide Hint or Help Text using CSS3 Transition</title>
+    <style type="text/css">
+        a.tooltip
+        {
+            position: relative;
+            display: inline;
+        }
+        a.tooltip span
+        {
+            position: absolute;
+            top: 30px;
+            left: 50%;
+            margin-left: -76px;
+            z-index: 999;
+            width: 250px;
+            height: auto;
+            color: #fff;
+            font-size: 12px;
+            line-height: 20px;
+            border-radius: 6px;
+            padding: 2px;
+            text-align: center;
+            background: #000;
+            border: 1px solid #808080;
+            visibility: hidden;
+            opacity: 0;
+            -webkit-transition: all 2s ease-out 0s;
+            -moz-transition: all 2s ease-out 0s;
+            -ms-transition: all 2s ease-out 0s;
+            -o-transition: all 2s ease-out 0s;
+            transition: all 2s ease-out 0s;
+        }
+        a:hover.tooltip span
+        {
+            visibility: visible;
+            -webkit-opacity: 0.90;
+            -moz-opacity: 0.90;
+            opacity: 0.90;
+        }
+        a.tooltip span:before
+        {
+            content: '';
+            position: absolute;
+            bottom: 100%;
+            left: 20%;
+            margin-left: -12px;
+            width: 0;
+            height: 0;
+            border-bottom: 12px solid #808080;
+            border-right: 12px solid transparent;
+            border-left: 12px solid transparent;
+        }
+        a.tooltip span:after
+        {
+            content: '';
+            position: absolute;
+            bottom: 100%;
+            left: 20%;
+            margin-left: -8px;
+            width: 0;
+            height: 0;
+            border-bottom: 8px solid #000000;
+            border-right: 8px solid transparent;
+            border-left: 8px solid transparent;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        Hover the Link: 
+        <a class="tooltip" href="#">AspnetO 
+            <span>AspnetO – Quick Way To Learn Asp.net</span></a>
+    </div>
+</body>
+</html>
